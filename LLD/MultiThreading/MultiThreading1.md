@@ -62,7 +62,8 @@ public class OddPrinter implements Runnable{
     
     @Override
     public void run(){
-        
+        // wrap inside try catch
+        counter.print(1);
     }
 }
 
@@ -74,14 +75,15 @@ public class EvenPrinter implements Runnable{
     }
     @Override
     public void run(){
-        
+        // wrap inside try catch
+
+        counter.print(0);
     }
 }
 
 
 
 
-______
 public class SharedCounter {
     private int counter;
     private final int LIMIT = 10;
